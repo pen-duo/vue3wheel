@@ -1,15 +1,13 @@
 <template>
-  <div>hi</div>
-  <Peng />
+  <div>
+    导航栏 | <router-link to="/">Peng</router-link> |
+    <router-link to="/xxx">Peng2</router-link>
+  </div>
+  <router-view></router-view>
 </template>
 
 <script>
-import Peng from "./components/Peng.vue";
-
 export default {
   name: "App",
-  components: {
-    Peng,
-  },
 };
 </script>
